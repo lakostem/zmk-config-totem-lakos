@@ -53,11 +53,6 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <24 25>;
         };
-
-        space3 {
-            bindings = <&kp SPACE>;
-            key-positions = <35>;
-        };
     };
 
     keymap {
@@ -83,10 +78,10 @@
 
         SIMBOLOS {
             bindings = <
-           &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans
-           &trans  &trans  &trans  &trans  &trans    &trans            &trans             &trans         &trans  &trans
-&kp SPACE  &trans  &trans  &trans  &trans  &trans    &trans            &trans             &trans         &trans  &trans  &trans
-                           &trans  &trans  &trans    &kp SPACE         &trans             &trans
+           &trans  &trans  &kp RA(TAB)  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans
+           &trans  &trans  &trans       &trans  &trans    &trans            &trans             &trans         &trans  &trans
+&kp SPACE  &trans  &trans  &trans       &trans  &trans    &trans            &trans             &trans         &trans  &trans  &trans
+                           &trans       &trans  &trans    &kp SPACE         &trans             &trans
             >;
         };
 
@@ -100,12 +95,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        device {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
