@@ -104,6 +104,15 @@
                                &trans  &trans  &trans    &trans              &trans           &trans
             >;
         };
+
+        layer_4 {
+            bindings = <
+        &trans  &trans  &tog 0  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
